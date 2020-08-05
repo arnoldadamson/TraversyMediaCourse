@@ -23,7 +23,7 @@ h5,
 h6,
 p,
 a {
-  color: #333;
+  color: #fff;
 }
 
 .btn {
@@ -35,19 +35,23 @@ a {
   border-radius: 5px;
 }
 
-
-.bg-dark{
-    background-color: #333;
+.bg-dark {
+  background-color: #333;
 }
 
-.clr{
-    clear: both;
+.clr {
+  clear: both;
 }
 
-.bg-org{
-    background-color: #cd6600;
-    padding: 0 5px;
-    border-radius: 5px;
+.bg-org {
+  background-color: #cd6600;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.space {
+  height: 50px;
+  background: #333;
 }
 /* Navbar */
 
@@ -56,6 +60,7 @@ a {
   background-color: #444;
   overflow: auto;
   position: fixed;
+  opacity: 0.9;
 }
 
 #navbar h1 {
@@ -96,7 +101,7 @@ a {
 }
 
 .main-container h1 {
-  font-size: 2.2rem;
+  font-size: 3rem;
   color: #fff;
   padding-top: 250px;
   padding-bottom: 20px;
@@ -109,11 +114,13 @@ a {
 }
 
 .main-container p {
+  font-size: 1.5rem;
   color: #fff;
 }
 
 .main-container a {
   margin-top: 60px;
+  font-size: 1.5rem;
 }
 .main-container a:hover {
   background: #b85b00;
@@ -123,9 +130,32 @@ a {
 /* Info section */
 #info {
   height: 400px;
+  display: flex;
 }
 
-#about-img {
+#info #about-img {
+  width: 50%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1523942839745-7848c839b661?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60")
+    no-repeat center center/cover;
+}
+
+#info #about-info {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#info #about-info h3 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+
+/* #about-img {
   float: left;
   width: 50%;
   height: 100%;
@@ -142,9 +172,6 @@ a {
 
 }
 
-
-
-
 #about-info h3,
 #about-info p{
     color: #fff;
@@ -158,6 +185,59 @@ a {
 }
 #about-info p{
     padding: 10px 100px;
+} */
+
+/* Contact form */
+#contact {
+  padding-top: 30px;
+  background: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
 }
 
+#box {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: #cd6600;
+  height: 200px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
 
+#box:hover {
+  background-color: #b85b00;
+}
+
+#box i {
+  font-size: 3rem;
+}
+
+@media (max-width: 786px) {
+  #contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact #box {
+    width: 70%;
+  }
+
+  #about-img {
+    display: none;
+  }
+  #info {
+    justify-content: center;
+    padding-bottom: 20px;
+    background-color: #b85b00;
+    align-items: center;
+  }
+
+  .bg-org {
+    background: #444;
+  }
+}
