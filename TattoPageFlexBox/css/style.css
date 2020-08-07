@@ -1,0 +1,110 @@
+/* Reset */
+@import url("https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&family=Ubuntul@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  color: #fff;
+}
+/* Utilities */
+html,
+body {
+  position: ;
+  height: 100%;
+  background: url("../images/showcase.jpg") no-repeat center center/cover;
+}
+
+.bg-primary {
+  color: #489716;
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: #489716;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background: #333134;
+  color: #489716;
+}
+/* Navbar */
+
+#main-container {
+  width: 100%;
+}
+
+#logo a {
+  text-decoration: none;
+}
+#navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #252222;
+  position: fixed;
+  opacity: 0.8;
+}
+
+#navbar .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+#navbar ul li {
+  padding: 0 10px;
+}
+#navbar ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 18px;
+  text-align: center;
+}
+
+#navbar ul li a:hover {
+  background-color: #333134;
+  border-bottom: 2px solid #489716;
+}
+
+/* Showcase/Main content */
+#showcase {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#showcase #main-text {
+  font-weight: 300;
+  font-size: 3rem;
+}
+#showcase #lead-text {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+#showcase #btn {
+  text-decoration: none;
+}
