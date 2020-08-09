@@ -1,5 +1,7 @@
-/* Css reset start of a page */
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
+/* Css reset start of a page */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,11 @@
 }
 
 h1,h2,h3,p,a {
-  color: #fff;
+  color: #f4f4f4;
+}
+
+body{
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 /* Navbar */
@@ -17,6 +23,10 @@ h1,h2,h3,p,a {
    align-items: center;
    padding: 0 20px;
    background-color: #023891;
+   width: 100%;
+   position: fixed;
+   opacity: 0.9;
+   z-index: 3;
 
  }
 
@@ -52,8 +62,265 @@ h1,h2,h3,p,a {
   align-items: center;
   justify-content: center;
   background: url(../images/showcase.jpg) no-repeat center center/cover;
+  position: relative;
+  z-index: 2;
+
+}
+
+#showcase::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  
 }
 
 #showcase h1{
-  margin-top: -300px;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+#showcase h1 span{
+  color: #023891;
+}
+
+#showcase p{
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+
+#showcase a.btn-primary{
+  text-decoration: none;
+}
+
+/* About  */
+
+#about-image{
+  overflow: hidden;
+  width: 50%;
+}
+
+#about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+#about-info{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #050620;
+
+}
+
+#about-info h2{
+  font-size: 2rem;
+
+}
+ #about-info h2,p{
+  color: #f4f4f4;
+ }  
+ 
+ /* Team */
+
+ #team-head{
+ padding: 30px 0;
+ }
+
+ #team-head{
+  background: #050620;
+}
+
+ .staff-member-info{
+   background: #023891;
+ }
+
+ /* Team */
+section#team h2{
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+
+ .row .box {
+   display: flex;
+   flex-direction: column;
+   width: 30%;
+   height: 100%;
+   padding: 10px;
+   margin-bottom: 20px;
+   border: 2px solid #023891;
+   margin-bottom: 50px;
+   text-align: center;
+ }
+
+ .staff-member-info{
+   text-align: center;
+ }
+
+ .row .box img{
+   max-width: 100%;
+   object-fit: cover;
+   max-height: 500px;
+   border-radius: 50%;
+ }
+
+ /* Galery */
+
+ #galery {
+   background-color: #050620;
+ }
+ #galery h1{
+   text-align: center;
+   font-size: 3rem;
+ }
+
+ .row .work-image {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   object-fit: cover;
+   width: 100%;
+   padding-bottom: 20px;
+   
+ }
+
+ .row .work-image img{
+   padding: 10px;
+   width: 30%;
+   flex-wrap: wrap;
+   height: 300px;
+   object-fit: cover;
+   
+ }
+ .row .work-image img:hover{
+  opacity: 0.6;
+ } 
+
+ /* Form */
+
+ .row {
+   display: flex;
+   width: 100%;
+ }
+
+ .form-group{
+   display: flex;
+   width: 100%;
+ }
+
+ .form-group h2{
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 3rem;
+   text-decoration: underline;
+ }
+
+ form {
+   display: flex;
+   flex-direction: column;
+   background-color: #012C74;
+   opacity: 0.9;
+   padding: 20px;
+   width:50%;
+   color: #fff;
+   align-items: center;
+   justify-content: center;
+   flex-basis: 50%;
+   
+ }
+
+ form label {
+   padding: 5px 0;
+   display: flex;
+   font-size: 1.2rem;
+   
+ }
+
+ form input {
+   padding: 10px;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   width: 70%;
+ }
+
+ form #form-btn {
+   margin-top: 20px;
+   border: none;
+   width: 70%;
+   background: #fff;
+   color: #012C74;
+ }
+
+ form input:active{
+   border: 2px dashed green;
+ }
+
+/* Footer */
+footer{
+
+  background: #333;
+  justify-content: center;
+  align-items: center;
+}
+ /* MOBILE */
+
+ @media (max-width: 768px){
+   #navbar{
+     flex-direction: column;
+   }
+
+   #navbar ul li a{
+     padding: 0;
+     padding-right: 10px;
+  
+   }
+
+   #showcase h1{
+     font-size: 2.5rem;
+   }
+
+   #about-image{
+     display: none;
+     text-align: center;
+   }
+   #about-info{
+     width: 100%;
+   }
+
+  .row .work-image img{
+   padding: 10px;
+   flex-basis: 100%;
+   flex-wrap: wrap;
+   object-fit: cover;
+ }
+
+} .form-group{
+  flex-direction: column;
+}
+
+.form-group h2{
+  font-size: 2rem;
+  padding-bottom: 40px;
+}
+
+.form-group h2, form{
+  width: 100%;
+}
+
+footer{
+  text-align: center;
 }
