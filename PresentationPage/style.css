@@ -3,7 +3,7 @@
   --page-2-color: tan;
   --page-3-color: teal;;
   --page-4-color: slateblue;
-  --animate-speed: 1s;
+  --animate-speed: 2s;
 }
 
 body{
@@ -38,16 +38,34 @@ body{
   justify-content: center;
   text-align: center;
   padding: 0 4rem;
+  
 }
 
-.page h1{
+#page-1 h1{
   font-size: 4rem;
   line-height: 1.2;
   margin: 1rem;
+  transform: translateY(-1200px);
+  animation: topToMid var(--animate-speed) forwards ease-in;
+  
+}
+ @keyframes topToMid {
+   to{
+     transform: translateY(0);
+   }
+ }
+
+#page-1 p{
+  font-size: 1.3rem;
+  transform: translateX(-1800px);
+  animation: leftToMid var(--animate-speed) forwards ease-in 1s;
+
 }
 
-.page p{
-  font-size: 1.3rem;
+@keyframes leftToMid {
+  to {
+    transform: translateX(0);
+  }
 }
 
 /* Button */
@@ -60,7 +78,7 @@ body{
   border: none;
   margin-top: 1rem;
   font-size: 1.1rem;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .btn:hover,
@@ -72,4 +90,5 @@ body{
 .btn-dark:hover{
   background: #fff;
   color: #333;
+  transform: rotate(360deg);
 }
