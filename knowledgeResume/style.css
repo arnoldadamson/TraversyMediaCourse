@@ -20,6 +20,7 @@ body {
 
 #main-header {
   background: var(--scolor);
+  padding: 50px;
 }
 
 .container {
@@ -61,6 +62,7 @@ h1 {
 
 #timeline ul li:nth-child(odd) div {
   left: 40px;
+  
 }
 
 /* Leftside */
@@ -82,5 +84,59 @@ h1 {
   transition: background 0.5s ease-in-out;
 }
 
+/* Arrow base */
 #timeline div::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* Right side arrow */
+#timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent var(--scolor) transparent transparent;
+}
+
+/* left side arrow */
+#timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent  transparent transparent var(--scolor);
+}
+
+@media (max-width: 900px){
+  #timeline ul li div {
+    width: 250px;
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: -284px;
+  }
+}
+
+@media (max-width: 600px) {
+    #timeline ul li div {
+    width: calc(100vw - 90px);
+  }
+
+  #timeline ul li {
+    margin-left: 20px;
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: 40px;
+  }
+
+#timeline ul li:nth-child(even) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent var(--scolor) transparent transparent;
+}
+
+
+
 }
