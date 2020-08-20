@@ -5,37 +5,116 @@
     <meta name="viewport" content="width=	, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilites.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Flexbox tattoo Page</title>
   </head>
   <body>
-    <header id="main-container">
-        <section id="main-div">
-            <div id="navbar">
-                <div class="container">
-                  <h1 id="logo"><a href="#home">FBTS</a></h1>
-                  <nav>
-                    <ul>
-                      <li><a href="">Home</a></li>
-                      <li><a href="">About</a></li>
-                      <li><a href="">Work</a></li>
-                      <li><a href="">Team</a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </header>
-            <section id="showcase">
-              <h1 id="main-text">
-                Flexbox <span class="bg-primary">Tattoo</span> Studio
-              </h1>
-              <p id="lead-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-                dolorum?
-              </p>
-              <a id="btn" class="btn-primary" href="">Make an appointment</a>
-            </section>
-        </section>
-     
-  </body>
+    <!-- Header/Navbar -->
+    <header>
+      <div id="navbar">
+        <h1 id="logo">Logo</h1>
+        <nav>
+          <ul>
+            <li><a href="#showcase"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-book-open"></i> About</i></a></li>
+            <li><a href="#team"><i class="fas fa-users"></i> Team </i></a></li>
+            <li><a href="#galery"><i class="fas fa-image"></i> Images</i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <section id="showcase" >
+        <h1>flexbox 
+          <span>tattoo</span>
+           studio</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a class="btn-primary" href="#contact">Contact us <i class="far fa-envelope"></i></a>
+      </section>
+    </header>
+  <section class="container" id="about">
+    <div class="row">
+      <div id="about-image">
+        <img src="/images/work/Us.jpg" alt="">
+      </div>
+      <div id="about-info">
+         <h2>What we do</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A assumenda iusto necessitatibus maiores ea veritatis numquam, tempore dolor omnis veniam.</p>
+        <a class="btn-primary" href="#galery">See our work</a>
+      </div>
+    </div>
+ </section>
+ <section class="container" id="team">
+   <h2 id="team-head">Our team</h2>
+    <div class="row">
+      <div class="box">
+         <div class="staff-member-img">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+      </div>
+      <div class="staff-member-info">
+        <h2>John Doe</h2>
+        <h3>CEO</h3>
+        <p>+(372)555 555</p>
+      </div>
+      </div>
+      <div class="box">
+         <div class="staff-member-img">
+        <img src="https://images.unsplash.com/photo-1589329482108-e414c7c6b8c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+      </div>
+      <div class="staff-member-info">
+        <h2>John Doe</h2>
+        <h3>CEO</h3>
+        <p>+(372)555 555</p>
+      </div>
+      </div>
+      <div class="box">
+         <div class="staff-member-img">
+        <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+      </div>
+      <div class="staff-member-info">
+        <h2>John Doe</h2>
+        <h3>CEO</h3>
+        <p>+(372)555 555</p>
+      </div>
+      </div>
+    </div>
+   </div>
+ </section>
+ <section id="galery">
+   <h1>Our work</h1>
+   <div class="row">
+     <div class="work-image">
+       <img src="https://images.unsplash.com/photo-1543244128-30d70d41e2a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80" alt="">
+       <img src="https://images.unsplash.com/photo-1507251217843-301ac7bf2afd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+       <img src="https://images.unsplash.com/photo-1586243287039-23f4c8e2e7ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+       <img src="https://images.unsplash.com/photo-1543244128-30d70d41e2a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80" alt="">
+       <img src="https://images.unsplash.com/photo-1543244128-30d70d41e2a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80" alt="">
+       <img src="https://images.unsplash.com/photo-1562962230-16e4623d36e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80" alt="">
+     </div>
+   </div>
+ </section>
+ <section id="contact">
+   <div class="container">
+     <div class="row">
+       
+       <div class="form-group">
+         <h2>Get in touch with us</h2>
+         <form action="">
+           <label for="name">Name</label>
+           <input type="text" name="name" id="name" placeholder="Enter you Name" required>
+           <label for="phone">Phone</label>
+           <input type="number" name="number" id="number" placeholder="Enter you phone number" required>
+           <label for="email">email</label>
+           <input type="email" name="email" id="email" placeholder="Enter you email" required>
+           <button type="submit" class="btn-primary" id="form-btn">Send</button>
+         </form>
+       </div>
+     </div>
+
+   </div>
+ </section>
+ <footer>
+   <p>Copyright &copy;2020</p>
+ </footer>
+      </body>
 </html>
