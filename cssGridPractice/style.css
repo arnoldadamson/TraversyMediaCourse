@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "content content side1"
+    "content content side2"
+    "footer footer footer";
+  text-align: center;
+  height: 95vh;
+  background: coral;
+}
+
+#header {
+  grid-area: header;
+}
+
+.main-content {
+  grid-area: content;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+}
